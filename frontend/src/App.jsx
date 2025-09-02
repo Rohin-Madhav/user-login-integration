@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
 
+import Register from "./pages/Register";
 function App() {
   return (
-    <div>
-      <h1 className='text-green-500'>Hello world</h1>
-    </div>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

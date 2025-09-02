@@ -50,7 +50,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.get("/protected",auth,(req,res)=>{
-    res.send("Hone page")
+    res.send("Home page")
 })
 
 module.exports = router
